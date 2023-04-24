@@ -1,9 +1,11 @@
 function checkMqttData(callback) {
     let mqttDataReceived = false;
+    
     const timer = setTimeout(() => {
       if (!mqttDataReceived) {
         callback();
       }
+
     }, 3000);
   
     // assume MQTT is subscribed and data received via some MQTT library 

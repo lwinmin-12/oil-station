@@ -58,26 +58,21 @@ client.on("connect", connect);
 client.on("message", async (topic, message) => {
   // console.log(topic, "///", message.toString());
   let income = message.toString();
-  let ar = income.split('')
-  // console.log(ar)
-  if(ar[0] == '1'){
-     updateNozzleBySerialNo({_id : "6442e3e540669ddab7a5d278"} , "1")
-
+  let ar = income.split("");
+  console.log(ar)
+  if (ar[0] == "1") {
+    updateNozzleBySerialNo({ _id: "6442e3e540669ddab7a5d278" }, "1");
   }
-  if(ar[1] == '1'){
-    updateNozzleBySerialNo({_id : "64435433d1961d7b72e27104"} , "2")
-
+  if (ar[1] == "1") {
+    updateNozzleBySerialNo({ _id: "64435433d1961d7b72e27104" }, "2");
   }
-  if(ar[2] == '1'){
-    updateNozzleBySerialNo({_id : "64435445d1961d7b72e27106"} , "3")
-
+  if (ar[2] == "1") {
+    updateNozzleBySerialNo({ _id: "64435445d1961d7b72e27106" }, "3");
   }
-  if(ar[3] == '1'){
-    updateNozzleBySerialNo({_id : "6443544ed1961d7b72e27108"} , "4")
-
+  if (ar[3] == "1") {
+    updateNozzleBySerialNo({ _id: "6443544ed1961d7b72e27108" }, "4");
   }
 });
-
 
 // request routes
 
