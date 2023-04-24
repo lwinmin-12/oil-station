@@ -52,7 +52,7 @@ export const updateNozzleBySerialNo = async (
     let nozzle = await getNozzle(query);
     let result = await updateNozzle(
       { _id: nozzle[0]["_id"] },
-      { currentLiter: nozzle[0]["currentLiter"]++ }
+      { currentLiter: nozzle[0]["currentLiter"]+1}
     );
     console.log(result[0].currentLiter , conditon)
     return result;
